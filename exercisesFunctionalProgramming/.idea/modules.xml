@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercises-build.iml" filepath="$PROJECT_DIR$/.idea/modules/exercises-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercisesFunctionalProgramming.iml" filepath="$PROJECT_DIR$/.idea/modules/exercisesFunctionalProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercisesfunctionalprogramming.iml" filepath="$PROJECT_DIR$/.idea/modules/exercisesfunctionalprogramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercisesfunctionalprogramming-build.iml" filepath="$PROJECT_DIR$/.idea/modules/exercisesfunctionalprogramming-build.iml" />
     </modules>
   </component>
 </project>
