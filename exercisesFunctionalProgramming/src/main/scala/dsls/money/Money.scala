@@ -2,7 +2,11 @@ package money
 
 case class Money(amount: BigDecimal, currency: Currency)(implicit converter: Converter){
 
+  def apply(amount: BigDecimal, currency: Currency)(implicit converter: Converter): Money = new Money(amount,currency)
+  
   def +(thatMoney: Money): Money = performOperation(thatMoney, _ + _)
+
+  def -(thatMoney: Money): Money = performOperation(thatMoney, _ - _)
 
   def performOperation(thatMoney: Money, operation: (BigDecimal, BigDecimal) => BigDecimal): Money = {
     thatMoney match {
@@ -15,5 +19,4 @@ case class Money(amount: BigDecimal, currency: Currency)(implicit converter: Con
     val rate = converter.convert(currency, thatCurrency)
     Money(amount * rate, thatCurrency)
   }
-
 }
