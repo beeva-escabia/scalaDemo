@@ -1,1 +1,7 @@
 /.project
+.idea/
+*.iml
+*.iws
+
+log/
+target/
